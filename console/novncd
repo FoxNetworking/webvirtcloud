@@ -51,7 +51,7 @@ parser.add_option("-p",
                   dest="port",
                   action="store",
                   help="Listen port",
-                  default=WS_PUBLIC_PORT or 6080)
+                  default=WS_PORT or 6080)
 
 parser.add_option("-c",
                   "--cert",
