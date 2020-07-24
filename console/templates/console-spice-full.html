@@ -156,6 +156,11 @@
         }
     }
 
+    function sendCtrlAltDel() {
+        SpiceHtml5.sendCtrlAltDel(sc);
+        return false;
+    }
+
     function sendctrlaltfn(f) {
         SpiceHtml5.sendCtrlAltFN(sc, f);
         return false;
@@ -172,7 +177,7 @@
     });
     */
     document.getElementById("fullscreen_button").addEventListener('click', fullscreen);
-    document.getElementById('ctrlaltdel').addEventListener('click', function () { sendCtrlAltDel(sc); });
+    document.getElementById('ctrlaltdel').addEventListener('click', function () { sendCtrlAltDel(); });
     document.getElementById('ctrlaltf1').addEventListener('click', function () { sendctrlaltfn(0) });
     document.getElementById('ctrlaltf2').addEventListener('click', function () { sendctrlaltfn(1) });
     document.getElementById('ctrlaltf3').addEventListener('click', function () { sendctrlaltfn(2) });
